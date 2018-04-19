@@ -9,7 +9,7 @@ Charles Quenum et Louis-Elie Maillard
 
 Bonjour correcteur/rice,
 
-Bienvenue sur notre Github. Malheureusement la PLS a pris le dessus sur nous et n'avons pas réussi à faire fonctionner notre programme. Du coup, on a fait en panique quelque chose de très simple pour ne pas rien rendre.
+Bienvenue sur notre Github. Malheureusement la PLS a pris le dessus sur nous et nous n'avons pas réussi à faire fonctionner notre programme. Du coup, on a fait en panique quelque chose de très simple pour ne pas rien rendre.
 
 Ca va pas être full plaisir pour toi et nous en sommes désolés !
 
