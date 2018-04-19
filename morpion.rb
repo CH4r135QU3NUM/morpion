@@ -15,7 +15,7 @@ puts " #{board[0]}  | #{board[1]}  | #{board[2]}"
 puts "-------------"
 puts "  #{board[3]}  | #{board[4]}  | #{board[5]}"
 puts "-------------"
-puts "  #{board[6]}  | #{board[7]}  | #{board[8]}  "
+puts "  #{board[6]}  | #{board[7]}  | #{board[8]}"
   end
     
 
@@ -66,7 +66,7 @@ display_board(board)
   first_diagonal_win = [0,4,8]
   second_diagonal_win = [6,4,2]
 
-#on déclare si le Joueur à gagner en fonction de ce qu'il a joué
+#on déclare si le Joueur à gagné en fonction de ce qu'il a joué
   if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
   puts "Joueur 1 gagne avec la ligne du haut"
   elsif  board[middle_row_win[3]].to_i == "X" && board[middle_row_win[4]].to_i == "X" && board[middle_row_win[5]].to_i == "X"
@@ -85,8 +85,25 @@ display_board(board)
   puts "Joueur 1 gagne avec la diagonale"
   else  board[second_diagonal_win[6]] == "X" && board[second_diagonal_win[4]] == "X" && board[second_diagonal_win[2]] == "X"
   puts "Joueur 1 gagne avec la diagonale"
+  elsif board[top_row_win[0]] == "O" && board[top_row_win[1]] == "O" && board[top_row_win[2]] == "O"
+  puts "Joueur 2 gagne avec la ligne du haut"
+  elsif  board[middle_row_win[3]].to_i == "O" && board[middle_row_win[4]].to_i == "O" && board[middle_row_win[5]].to_i == "O"
+  puts "Joueur 2 gagne avec la ligne du milieu"
+  elsif  board[bottom_row_win[6]] == "O" && board[bottom_row_win[7]] == "O" && board[bottom_row_win[8]] == "O"
+  puts "Joueur 2 gagne avec la ligne du bas"
+  elsif  board[first_diagonal_win[0]] == "O" && board[first_diagonal_win[4]] == "O" && board[first_diagonal_win[8]] == "O"
+  puts "Joueur 2 gagne avec la diagonale"
+  elsif  board[second_diagonal_win[6]] == "O" && board[second_diagonal_win[4]] == "O" && board[second_diagonal_win[2]] == "O"
+  puts "Joueur 2 gagne avec la diagonale"
+  elsif  board[right_vertical_win[2]] == "O" && board[right_vertical_win[5]] == "O" && board[right_vertical_win[8]] == "O"
+  puts "Joueur 2 gagne avec la verticale"
+  elsif  board[bottom_row_win[6]] == "O" && board[bottom_row_win[7]] == "O" && board[bottom_row_win[8]] == "O"
+  puts "Joueur 2 gagne avec la ligne du bas"
+  elsif  board[first_diagonal_win[0]] == "O" && board[first_diagonal_win[4]] == "O" && board[first_diagonal_win[8]] == "O"
+  puts "Joueur 2 gagne avec la diagonale"
+  else  board[second_diagonal_win[6]] == "O" && board[second_diagonal_win[4]] == "O" && board[second_diagonal_win[2]] == "O"
+  puts "Joueur 2 gagne avec la diagonale"
   end
-
   
 end
 partie #lance l'ensemble du programme
