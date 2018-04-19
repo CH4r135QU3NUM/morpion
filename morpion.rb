@@ -69,7 +69,7 @@ display_board(board)
 #on déclare si le Joueur à gagné en fonction de ce qu'il a joué
   if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
   puts "Joueur 1 gagne avec la ligne du haut"
-  elsif  board[middle_row_win[3]].to_i == "X" && board[middle_row_win[4]].to_i == "X" && board[middle_row_win[5]].to_i == "X"
+  elsif  board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
   puts "Joueur 1 gagne avec la ligne du milieu"
   elsif  board[bottom_row_win[6]] == "X" && board[bottom_row_win[7]] == "X" && board[bottom_row_win[8]] == "X"
   puts "Joueur 1 gagne avec la ligne du bas"
@@ -87,7 +87,7 @@ display_board(board)
   puts "Joueur 1 gagne avec la diagonale"
   elsif board[top_row_win[0]] == "O" && board[top_row_win[1]] == "O" && board[top_row_win[2]] == "O"
   puts "Joueur 2 gagne avec la ligne du haut"
-  elsif  board[middle_row_win[3]].to_i == "O" && board[middle_row_win[4]].to_i == "O" && board[middle_row_win[5]].to_i == "O"
+  elsif  board[middle_row_win[3]] == "O" && board[middle_row_win[4]] == "O" && board[middle_row_win[5]] == "O"
   puts "Joueur 2 gagne avec la ligne du milieu"
   elsif  board[bottom_row_win[6]] == "O" && board[bottom_row_win[7]] == "O" && board[bottom_row_win[8]] == "O"
   puts "Joueur 2 gagne avec la ligne du bas"
